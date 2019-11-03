@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="696.0" prefWidth="184.0" style="-fx-background-color: #00ccff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="739.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutY="408.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" style="-fx-background-color: #1a8cff;" text="Prescriptions" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutY="480.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" style="-fx-background-color: #1a8cff;" text="Request Drug" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutY="552.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" style="-fx-background-color: #1a8cff;" text="Schedule" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutY="624.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" style="-fx-background-color: #1a8cff;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button fx:id="vitalsBtn" layoutY="336.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" style="-fx-background-color: #1a8cff;" text="Vitals" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="123.0" fitWidth="162.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="48.0" layoutY="136.0" prefHeight="43.0" prefWidth="88.0" text="Username" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.0" prefHeight="595.0" prefWidth="740.0" />
+         </children>
+      </Pane>
+      <StackPane layoutX="182.0" layoutY="95.0" prefHeight="595.0" prefWidth="738.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="740.0" />
+            <AnchorPane layoutX="9.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="740.0" style="-fx-background-color: #f2f2f2;">
+               <children>
+                  <Pane layoutX="144.0" layoutY="47.0" prefHeight="500.0" prefWidth="452.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="144.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="47.0">
+                     <children>
+                        <Pane prefHeight="62.0" prefWidth="452.0" style="-fx-background-color: #1a8cff;">
+                           <children>
+                              <Label layoutX="151.0" layoutY="15.0" text="VITAL SIGNS" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <VBox layoutX="39.0" layoutY="103.0" prefHeight="322.0" prefWidth="123.0" spacing="30.0">
+                           <children>
+                              <Label text="Height" />
+                              <Label layoutX="11.0" layoutY="11.0" text="Weight" />
+                              <Label layoutX="11.0" layoutY="38.0" text="Heart Rate" />
+                              <Label layoutX="11.0" layoutY="65.0" text="Respirations" />
+                              <Label layoutX="11.0" layoutY="92.0" text="Temperature" />
+                              <Label layoutX="11.0" layoutY="119.0" text="Blood Pressure" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="176.0" layoutY="103.0" prefHeight="322.0" prefWidth="230.0" spacing="20.0" style="-fx-border-color: ;">
+                           <children>
+                              <TextField style="-fx-border-color: #000;" />
+                              <TextField layoutX="11.0" layoutY="11.0" style="-fx-border-color: #000;" />
+                              <TextField layoutX="11.0" layoutY="50.0" style="-fx-border-color: #000;" />
+                              <TextField layoutX="11.0" layoutY="89.0" style="-fx-border-color: #000;" />
+                              <TextField layoutX="11.0" layoutY="128.0" style="-fx-border-color: #000;" />
+                              <TextField layoutX="11.0" layoutY="167.0" style="-fx-border-color: #000;" />
+                           </children>
+                        </VBox>
+                        <Button layoutX="345.0" layoutY="435.0" mnemonicParsing="false" style="-fx-background-color: #1a8cff;" text="Save" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="740.0" style="-fx-background-color: #1a8cff;" visible="false" />
+         </children>
+      </StackPane>
+      <Pane layoutX="182.0" layoutY="-3.0" prefHeight="98.0" prefWidth="745.0" style="-fx-background-color: #00ccff;" AnchorPane.bottomAnchor="595.0" AnchorPane.leftAnchor="182.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="599.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/church-bell-icon-5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="631.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/text-message-icon-png-91-images-in-collection-page-1-png-message-512_279.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
